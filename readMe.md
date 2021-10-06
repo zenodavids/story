@@ -27,8 +27,7 @@
 we can use steps 3 - 5 to keeping updating and adding files.
 /////////
 say we are writing a book, we completed chapter 1 and added chapter 2 and 3.
-/////////////////////////////////////////////////
-
+//////////////////////
 //// other GIT commands
 
 -- git init
@@ -52,3 +51,29 @@ to see what commits you have made, the name of the author and time the commit wa
 
 -- git checkout [file name.format]
 to roll ack to previous version
+/////////////////////////////////////////////////////////////////////
+
+////////////// MOVING THE GIT LOCAL REPOSitory TO GITHUB REMOTE REPOSITORY.
+-- sign in to your github acount
+-once in, at the top right, click on the '+' sign and select 'new repository'
+-give the repository a name, preferably the name of the web app.
+-next, type the description in the description box.
+-check the 'public' box.
+-click on 'create repository'
+
+--moving the local repostory to the github repository.
+-copy the address of the github repository,
+-go to the command line, make sure you are in the working directory and type this code to create a remote repository in your github profile;
+=git remote add origin [the copied address of the github repository]=
+-add follow the instructions.
+-next we use;
+=git push -u origin master=
+-what this code does is it pushes all your local repository to the to your github remote repository using the '-u' flag to basically link the local and the remote repositories.
+and we push it towards the remote called 'origin' and push it to the branch called 'master '.
+-refresh the page and all of our files will be shown on github.
+-click on 'insights' and 'network' and you will see the master branch and the number of save points.
+-hover over them to see the commit messages of each one.
+
+///// 
+
+
