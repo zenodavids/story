@@ -30,10 +30,25 @@ say we are writing a book, we completed chapter 1 and added chapter 2 and 3.
 /////////////////////////////////////////////////
 
 //// other GIT commands
--- git checkout [file name.format]
-to roll ack to previous version
+
+-- git init
+this initalizes git and it was be done in the terminal of the working diectory.
 
 -- git status
-to see tracked files(shows in green) and untracked files(shows in red)
+to see what is in the staging area (after intializing git).
+tracked files(shows in green) are in the stage area and untracked files(shows in red) are not in the stage area.
 
--- 
+-- git add [filename.fileformat]
+-- git add .
+fist one adds a paticular file to the stage area
+second adds all the files in the working diectory to the stage area.
+
+-- git commit -m 'description of the commit version'
+this saves a particular version of the specific file on git.
+and the message is written in present tense.
+
+-- git log
+to see what commits you have made, the name of the author and time the commit was saved.
+
+-- git checkout [file name.format]
+to roll ack to previous version
