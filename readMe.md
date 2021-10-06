@@ -8,7 +8,7 @@
 
 2 --to show the status of your files.
 =git status=
--tracked files will be shown in green, untracked files will besshown in red.
+-tracked files will be shown in green, untracked files will be shown in red.
 
 3 --to start tracking the files in the project directory, we add the file(s) to a staging area(here, we decide if to send all or some of our files to the repository - what files git should add and git should ignore).
 =git add chapter1.txt= (for one file)
@@ -74,6 +74,13 @@ and we push it towards the remote called 'origin' and push it to the branch call
 -click on 'insights' and 'network' and you will see the master branch and the number of save points.
 -hover over them to see the commit messages of each one.
 
-///// 
+///// UPDATING THE FILES AND ADDING THE UPDATE
+--saving up on local repository
+-git add [filename.fileformat]
+-git commit -m [commit-message]
+
+--saving it on the remote repository(GITHUB)
+-git push
+
 
 
