@@ -49,8 +49,11 @@ and the message is written in present tense.
 -- git log
 to see what commits you have made, the name of the author and time the commit was saved.
 
--- git checkout [file name.format]
+-- git checkout [filename.format]
 to roll ack to previous version
+
+-- git rm --cached -r .
+to remove all the files from staging area(just before you commit them)
 /////////////////////////////////////////////////////////////////////
 
 ////////////// MOVING THE GIT LOCAL REPOSitory TO GITHUB REMOTE REPOSITORY.
@@ -82,5 +85,29 @@ and we push it towards the remote called 'origin' and push it to the branch call
 --saving it on the remote repository(GITHUB)
 -git push
 
+/////////////////////////////////////////////////////////////
 
+///// GITIGNORE
+
+this hides sensitive information that we dont want to be hosted, ie;
+-API keys,
+-Ds_Store :- this is a settings file that saves seting things i.e the arrangement of files/pictures/images in your folder. this is also a hidden file.
+
+--SETTING UP GITIGNORE
+--create the file.
+-in your terminal, make sure you are in your working directory and type this code;
+= touch .gitignore =
+-to confirm if it is there, use this code below and what it does is it lists out all the files and folder in that directory, including hidden ones;
+=ls -a=
+-then we open gitignore.
+=open .gitignore=
+-next we add/type the file names of the files/folders we dont want to be added to git - exactly the same upper and lower letter casing the name of the file will hsve and their format.
+
+
+///// GITINORE CODES
+-- #
+we can use the pound sign (#) to comment,
+
+-- *
+say we want to hide all the files with the format '.txt', we use '*.txt' to easily  add them all, instead of typing them one by one.
 
