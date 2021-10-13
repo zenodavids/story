@@ -82,7 +82,7 @@ and we push it towards the remote called 'origin' and push it to the branch call
 -git add [filename.fileformat]
 -git commit -m [commit-message]
 
---saving it on the remote repository(GITHUB)
+--saving it on the remote repository (GITHUB)
 -git push
 
 /////////////////////////////////////////////////////////////
@@ -110,4 +110,35 @@ we can use the pound sign (#) to comment,
 
 -- *
 say we want to hide all the files with the format '.txt', we use '*.txt' to easily  add them all, instead of typing them one by one.
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+//////// GIT CLONE
+
+this is when a repository/poject is download from github website to your local device.
+-go to the repository that you want to download.
+- click on it and at the top left corner, you will see a green button named 'download' or 'code' and you will be given the option to download the ZIP file and a url will also be shown there.
+- copy the url, go to your terminal and cd into the directory that you want the project to be, then clone the project using;
+=git clone [the copied url]=
+this downloads all the files into your pc.
+
+////////////////////////////////////////////////////////////////////////
+
+////// BRANCHING AND MERGING
+
+-by default, all projects have a branch named the 'master' branch. say we are working on a project and we want to test other options outside of the usal project but still maintain the original project, we create a different branch to store the test files seperate from the original files and we can still merge themif the test files actually makes sense.
+
+-to create a new branch,
+=git branch [name of new branch]=
+
+-to see the brsnches in a project,
+=git branch=
+this shows all the branches in that project and the branch you are currently on will have the star sign(*) just before it.
+
+-to switch between branches,
+=git checkout [branch name you want to switch to]=
+once youve switced, you ccan edit the files (note that the original files are still in the master branch) and to save the to the branch;
+git add .
+git commit -m [commit message]
 
