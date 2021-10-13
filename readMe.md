@@ -142,3 +142,11 @@ once youve switced, you ccan edit the files (note that the original files are st
 git add .
 git commit -m [commit message]
 
+
+/// MERGING BRANCHES
+
+- to merge branches, go back to the master branch using;
+=git checkout master=
+
+-then use this code to merge branches;
+=git merge [name of the second branch]=
