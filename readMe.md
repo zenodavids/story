@@ -132,7 +132,7 @@ this downloads all the files into your pc.
 -to create a new branch,
 =git branch [name of new branch]=
 
--to see the brsnches in a project,
+-to see the branches in a project,
 =git branch=
 this shows all the branches in that project and the branch you are currently on will have the star sign(*) just before it.
 
